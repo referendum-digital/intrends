@@ -1,0 +1,24 @@
+{
+  "name": "news-referendum-generator",
+  "version": "1.0.0",
+  "description": "Generates referendums from news using InTrends, OpenAI, and Referendum APIs",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
+    "winston": "^3.14.2"
+  },
+  "devDependencies": {
+    "@eslint/config-array": "^0.18.0",
+    "@eslint/object-schema": "^2.1.4",
+    "eslint": "^9.12.0",
+    "prettier": "^3.3.3"
+  }
+}

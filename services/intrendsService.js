@@ -2,7 +2,6 @@ import axios from 'axios';
 import logger from '../utils/logger.js';
 import dotenv from 'dotenv';
 
-// Загружаем .env явно
 dotenv.config();
 
 export async function getTrends() {
@@ -25,7 +24,7 @@ export async function getTrends() {
     }
 
     logger.info('Successfully fetched trends from InTrends API');
-    return data.trends; // Возвращаем массив trends
+    return data.trends; 
   } catch (error) {
     logger.error(`Failed to fetch trends from InTrends: ${error.message}`, error);
     throw new Error('InTrends API request failed.');
